@@ -1,3 +1,5 @@
+let stateInfo;
+
 loadJson();
 
 function loadJson() {
@@ -7,6 +9,7 @@ function loadJson() {
     })
     .then((data) => {
       stateInfo = data;
+      console.log(stateInfo);
       loadState();
     })
     .catch((err) => {
